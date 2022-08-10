@@ -75,7 +75,7 @@
         margin-top: 3px
 .waiting
     background: #EFEFEF
-    height: 604px
+    min-height: 604px
     .wrapper
         // padding: 0px
         // margin: 0px
@@ -158,7 +158,7 @@
             color: #4A4A4A
 .education_fns
     background: url('../img/second_bg.jpg')
-    height: 447px
+    min-height: 447px
     .wrapper
         display: flex
         justify-content: space-evenly
@@ -289,7 +289,7 @@
             color: #4A4A4A
 .footer
     background-color: #1A1A1A
-    height: 169px
+    min-height: 169px
     margin-top: 52px
     &_text 
         display: flex
@@ -314,4 +314,98 @@
             font-size: 15px
             text-align: center
             color: #888888
+
+@media (max-width: 992px)
+    .optimization
+        margin-top: 20px
+        &_photo
+            min-width: 400px
+            min-height: 300px
+            margin: 0px
+            &_text
+                display: none
+    .promo
+        &_header_descr
+            display: none
+        &_header h1
+            font-size: 50px
+        &_header h2
+            font-size: 30px
+    .waiting
+
+        .wrapper
+            display: block
+            
+
+        .waiting_photo_1
+            margin: 0 auto
+        .waiting_photo_2
+            margin: 0 auto
+            margin-top: 30px
+        .waiting_photo_3
+            margin: 0 auto
+            margin-top: 30px
+            margin-bottom: 30px
+        .waiting_photo_descr
+            display: none
+    .education_fns
+        height: 1550px
+        .wrapper
+            display: block
+            align-items: center
+            margin-top: -15px
+        &_photo_descr
+            // display: none
+            font-size: 28px
+            line-height: 25px
+            margin-top: 30px
+            width: 300px
+            margin-left: -60px
+            padding-top: 190px
+        &_photo_1
+            margin: 0 auto
+            margin-top: 40px
+            width: 180px
+            height: 180px
+        &_photo_2
+            margin: 0 auto
+            margin-top: 90px
+            width: 180px
+            height: 180px
+        &_photo_3
+            margin: 0 auto
+            margin-top: 90px
+            width: 180px
+            height: 180px
+        &_photo_4
+            margin: 0 auto
+            margin-top: 90px
+            width: 180px
+            height: 180px
+        &_photo_5
+            margin: 0 auto
+            margin-top: 90px
+            margin-bottom: 40px
+            width: 180px
+            height: 180px
+    .present
+        &_btn
+            margin-bottom: 20px
+    .footer
+        &_text
+            display: block
+            &_item:first-child
+                border: none
+                margin-right: 0px
+            
+            &_item
+                text-align: center
+                margin-bottom: 0px
+                margin-top: 20px
+                a
+                    font-size: 25px
+        &_phone p
+            font-size: 25px
+            margin-top: 20px
+    
 
