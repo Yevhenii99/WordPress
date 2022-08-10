@@ -1,4 +1,4 @@
-* 
+*
     box-sizing: border-box
     margin: 0px
     padding: 0px
@@ -96,7 +96,7 @@
         width: 220px
         height: 4px
         background-color: #F9BF3B
-    &_text 
+    &_text
         font-style: normal
         font-weight: 400
         font-size: 23px
@@ -105,17 +105,17 @@
         text-align: center
         color: #4A4A4A
     &_photo_1
-        background: url('../icons/waiting_1.png') 
+        background: url('../icons/waiting_1.png')
         width: 342px
         height: 201px
         margin-right: 48px
     &_photo_2
-        background: url('../icons/waiting_2.png') 
+        background: url('../icons/waiting_2.png')
         width: 348px
         height: 201px
         margin-right: 48px
     &_photo_3
-        background: url('../icons/waiting_3.png') 
+        background: url('../icons/waiting_3.png')
         width: 342px
         height: 201px
     &_photo_descr
@@ -130,12 +130,13 @@
     &_photo
         background: url('../img/optimization.jpg') center (center / cover) no-repeat
         min-width: 868px
-        min-height: 502px   
+        min-height: 502px
         margin-top: 35px
         margin-bottom: 10px
         &_text
-            margin-top: -460px
-    &_header 
+            margin-top: -500px
+            margin-left: 600px
+    &_header
         font-style: normal
         font-weight: 900
         font-size: 27px
@@ -178,42 +179,42 @@
         background-color: #F9BF3B
     &_photo_1
         background: url('../icons/finish_1.png') center (center) no-repeat
-        width: 118px 
+        width: 118px
         height: 118px
         margin-top: 39px
         border-radius: 100%
         background-color: #B4E2FF
     &_photo_2
         background: url('../icons/finish_2.png') center (center) no-repeat
-        width: 118px 
+        width: 118px
         height: 118px
         margin-top: 39px
         border-radius: 100%
         background-color: #B4E2FF
     &_photo_3
         background: url('../icons/finish_3.png') center (center) no-repeat
-        width: 118px 
+        width: 118px
         height: 118px
         margin-top: 39px
         border-radius: 100%
         background-color: #B4E2FF
     &_photo_4
         background: url('../icons/finish_4.png') center (center) no-repeat
-        width: 118px 
+        width: 118px
         height: 118px
         margin-top: 39px
         border-radius: 100%
         background-color: #B4E2FF
     &_photo_5
         background: url('../icons/finish_5.png') center (center) no-repeat
-        width: 118px 
+        width: 118px
         height: 118px
         margin-top: 39px
         border-radius: 100%
         background-color: #B4E2FF
     &_photo_descr
         margin-top: 155px
-        min-width: 200px 
+        min-width: 200px
         font-style: normal
         font-weight: 300
         font-size: 17px
@@ -291,10 +292,10 @@
     background-color: #1A1A1A
     min-height: 169px
     margin-top: 52px
-    &_text 
+    &_text
         display: flex
         justify-content: center
-        margin-top: 55px                
+        margin-top: 55px
         &_item:first-child
             border-right: 2px solid #888888
             margin-right: 20px
@@ -315,6 +316,77 @@
             text-align: center
             color: #888888
 
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1050
+    display: none
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(0, 0, 0, 0.5)
+    &__dialog
+        max-width: 500px
+        margin: 40px auto
+        border: 2px solid green
+    &__content
+        position: relative
+        width: 100%
+        padding: 40px
+        background-color: #fff
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 4px
+        max-height: 80vh
+        overflow-y: auto
+    &__close
+        position: absolute
+        top: 8px
+        right: 14px
+        font-size: 30px
+        color: red
+        opacity: 0.5
+        font-weight: 700
+        border: none
+        background-color: transparent
+        cursor: pointer
+    &__title
+        text-align: center
+        font-size: 22px
+        text-transform: uppercase
+    &__input
+        display: block
+        margin: 20px auto 20px auto
+        width: 280px
+        height: 50px
+        background: #FFFFFF
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2)
+        border: none
+        font-size: 18px
+        text-align: center
+        padding: 0 20px
+        outline: none
+    &__btn
+        width: 250px
+        height: 40px
+        color: pink
+        background-color: #6386b0
+        border-radius: 50%
+        border: 2px solid green
+        margin-left: 85px
+        margin-top: 20px
+        text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22)
+        text-transform: uppercase
+
+
+.show
+    display: block
+.hide
+    display: none
+
+
+
 @media (max-width: 992px)
     .optimization
         margin-top: 20px
@@ -331,11 +403,12 @@
             font-size: 50px
         &_header h2
             font-size: 30px
+        &_text_down
+            margin-top: 100px
     .waiting
 
         .wrapper
             display: block
-            
 
         .waiting_photo_1
             margin: 0 auto
@@ -397,7 +470,7 @@
             &_item:first-child
                 border: none
                 margin-right: 0px
-            
+
             &_item
                 text-align: center
                 margin-bottom: 0px
@@ -407,5 +480,4 @@
         &_phone p
             font-size: 25px
             margin-top: 20px
-    
 
